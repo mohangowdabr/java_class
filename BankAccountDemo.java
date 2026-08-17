@@ -47,7 +47,7 @@ class BankAccount {
 public class BankAccountDemo {
     public static void main(String[] args) {
 
-        BankAccount account1 = new BankAccount("Ravi", 1001, "Savings", 10000);
+        BankAccount account1 = new BankAccount("mohan", 1001, "Savings", 10000);
         account1.balanceEnquiry();
 
         System.out.println();
@@ -57,12 +57,12 @@ public class BankAccountDemo {
         account1.withdraw(3000);
 
         System.out.println();
-        BankAccount account2 = new BankAccount("Meera", 1002, "Savings", 12000);
+        BankAccount account2 = new BankAccount("sir", 1002, "Savings", 12000);
         account2.withdraw(12000);
         account2.balanceEnquiry();
 
         System.out.println();
-        BankAccount account3 = new BankAccount("Kiran", 1003, "Savings", 10000);
+        BankAccount account3 = new BankAccount("mam", 1003, "Savings", 10000);
         account3.withdraw(15000);
 
         System.out.println();
