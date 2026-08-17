@@ -1,5 +1,4 @@
-// Practicum No. 1 - Classes, Objects and Constructor
-// Bank Account Management using Class, Objects and Constructor
+
 
 class BankAccount {
     String accountHolderName;
@@ -7,7 +6,6 @@ class BankAccount {
     String accountType;
     double accountBalance;
 
-    // Parameterized Constructor to initialize account details
     BankAccount(String name, long accNo, String type, double balance) {
         accountHolderName = name;
         accountNumber = accNo;
@@ -15,7 +13,7 @@ class BankAccount {
         accountBalance = balance;
     }
 
-    // Adds money to the account
+    
     void deposit(double amount) {
         if (amount > 0) {
             accountBalance = accountBalance + amount;
@@ -25,7 +23,7 @@ class BankAccount {
         }
     }
 
-    // Withdraws money if sufficient balance, otherwise displays "Insufficient Balance"
+    
     void withdraw(double amount) {
         if (amount <= 0) {
             System.out.println("Invalid withdrawal amount: " + amount);
@@ -37,7 +35,7 @@ class BankAccount {
         }
     }
 
-    // Displays the current account balance
+
     void balanceEnquiry() {
         System.out.println("Account Holder: " + accountHolderName);
         System.out.println("Account Number: " + accountNumber);
@@ -79,9 +77,5 @@ public class BankAccountDemo {
         System.out.println();
         account1.withdraw(0);
 
-        // Calling account1.withdraw() with no argument, or calling
-        // withdraw()/deposit() without an object name, does not compile
-        // in Java (wrong number of arguments / instance method needs an
-        // object). Try those separately and record the compiler error.
     }
 }
