@@ -1,5 +1,4 @@
-// Practicum No. 2 - Inheritance
-// University Student Management using Inheritance concept
+
 
 class Student {
     String studentId;
@@ -12,7 +11,6 @@ class Student {
         this.department = department;
     }
 
-    // Displays the common student information
     void displayStudentDetails() {
         System.out.println("Student ID   : " + studentId);
         System.out.println("Student Name : " + (studentName.isEmpty() ? "(empty)" : studentName));
